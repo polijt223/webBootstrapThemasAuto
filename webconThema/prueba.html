@@ -34,10 +34,10 @@
                   <li class="nav-item dropdown">
                       <a class=" nav-link  dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                       <div class="dropdown-menu" aria-labelledby="dropdownId">
-                          <a id="dropdowncolor1" class="dropdown-item hbutton" onclick="temaamarillo()" href="#">Amarillo</a>
-                          <a id="dropdowncolor2" class="dropdown-item hbutton" onclick="temarojo()" href="#">rojo</a>
-                          <a id="dropdowncolor3" class="dropdown-item hbutton" onclick="temaazul()" href="#">azul</a>
-                          <a id="dropdowncolor4" class="dropdown-item hbutton" onclick="temanegro()" href="#">negro</a>
+                          <a id="dropdowncolor1" class="dropdown-item hbutton" onclick="cambiartema('dropdowncolor1')" href="#">Amarillo</a>
+                          <a id="dropdowncolor2" class="dropdown-item hbutton" onclick="cambiartema('dropdowncolor2')" href="#">rojo</a>
+                          <a id="dropdowncolor3" class="dropdown-item hbutton" onclick="cambiartema('dropdowncolor3')" href="#">azul</a>
+                          <a id="dropdowncolor4" class="dropdown-item hbutton" onclick="cambiartema('dropdowncolor4')" href="#">negro</a>
                       </div>
                   </li>
               </ul>
@@ -87,7 +87,7 @@
     <div id="articulos" class="container py-5">
         <div class="row">
             <div class="col-4">
-                <div id="card1h" onmouseover="maszoomDark(card1h)" onmouseout="menoszoomDark(card1h)" class="card border border-dark">
+                <div id="card1h" onmouseover="maszoom(card1h)" onmouseout="menoszoom(card1h)" class="card border border-dark">
                     <img class="card-img-top " src="../imagenes/tw2.jpg" alt="">
                     <div class="card-body">
                         <h4 id="cardTitle1" class="card-title text-dark">Title</h4>
@@ -99,7 +99,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="card border border-dark" id="card2h" onmouseover="maszoomDark(card2h)" onmouseout="menoszoomDark(card2h)">
+                <div class="card border border-dark" id="card2h" onmouseover="maszoom(card2h)" onmouseout="menoszoom(card2h)">
                     <img class="card-img-top" src="../imagenes/tw3.jpg" alt="">
                     <div class="card-body">
                             <h4 id="cardTitle2" class="card-title text-dark">Title</h4>
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="card border border-dark" id="card3h" onmouseover="maszoomDark(card3h)" onmouseout="menoszoomDark(card3h)">
+                <div class="card border border-dark" id="card3h" onmouseover="maszoom(card3h)" onmouseout="menoszoom(card3h)">
                     <img class="card-img-top" src="../imagenes/tw1.jpg" alt="">
                     <div class="card-body">
                         <h4 id="cardTitle3" class="card-title text-dark">Title</h4>
@@ -191,6 +191,7 @@
             <div class="col-6">
                 <div class="card">
                     <img id="imagenC" class="card-img-top" src="../imagenes/tw1.jpg" alt="">
+                        <input id="elementohidden2" type="hidden" class="dark"></input>
                         <input id="elementohidden" type="hidden" class="bg-dark"></input>
                         <div class="list-group">
                             <button id="bt1h" type="button" onclick="cambiarimagen1(bt1h)" class="hbuttonDark list-group-item list-group-item-action bg-dark">Image 1</button>

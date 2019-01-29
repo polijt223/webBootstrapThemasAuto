@@ -50,197 +50,83 @@ function cambiarimagen5(x){
     bt1h.setAttribute("class",n);
 }
 
-function maszoomDark(x){
-    x.setAttribute("class","card mt-3 shadow-lg border border-dark");
+function maszoom(x){
+    var h = elementohidden2.getAttribute("class");
+    x.setAttribute("class","card mt-3 shadow-lg border border-"+h);
     
 }
-function menoszoomDark(x){
-    x.setAttribute("class","card  border border-dark");
+function menoszoom(x){
+    var h = elementohidden2.getAttribute("class");
+    x.setAttribute("class","card  border border-"+h);
 }
 
-function maszoomDanger(x){
-    x.setAttribute("class","card mt-3 shadow-lg border border-danger");
-    
-}
-function menoszoomDanger(x){
-    x.setAttribute("class","card  border border-danger");
-}
+function cambiartema(texto){
 
-function maszoomWarning(x){
-    x.setAttribute("class","card mt-3 shadow-lg border border-warning");
-    
-}
-function menoszoomWarning(x){
-    x.setAttribute("class","card  border border-warning");
-}
+    var color;
+    var colorC;
 
-function maszoomPrimary(x){
-    x.setAttribute("class","card mt-3 shadow-lg border border-primary");
-    
-}
-function menoszoomPrimary(x){
-    x.setAttribute("class","card  border border-primary");
-}
+    if(texto.localeCompare("dropdowncolor1")==0){
+        console.log("Warning");
+        color = "warning";
+        colorC = "Warning";
+    }
+    if(texto.localeCompare("dropdowncolor2")==0){
+        console.log("Danger");
+        color = "danger";
+        colorC = "Danger";
+    }
+    if(texto.localeCompare("dropdowncolor3")==0){
+        console.log("Primary");
+        color = "primary";
+        colorC = "Primary";
+    }
+    if(texto.localeCompare("dropdowncolor4")==0){
+        console.log("Dark");
+        color = "dark";
+        colorC = "Dark";
+    }
 
-function temaamarillo(){
 
-    navth.setAttribute("class","navbar navbar-expand-sm navbar-light bg-warning fixed-top ");
-    btnf1.setAttribute("class","btn btn-outline-dark my-2 my-sm-0");
-
-    card1h.setAttribute("onmouseover","maszoomWarning(card1h)");
-    card1h.setAttribute("onmouseout","menoszoomWarning(card1h)");
-    card1h.setAttribute("class","card  border border-warning");
-    cardTitle1.setAttribute("class","card-title text-warning");
-    card2h.setAttribute("onmouseover","maszoomWarning(card2h)");
-    card2h.setAttribute("onmouseout","menoszoomWarning(card2h)");
-    card2h.setAttribute("class","card  border border-warning");
-    cardTitle2.setAttribute("class","card-title text-warning");
-    card3h.setAttribute("onmouseover","maszoomWarning(card3h)");
-    card3h.setAttribute("onmouseout","menoszoomWarning(card3h)");
-    card3h.setAttribute("class","card  border border-warning");
-    cardTitle3.setAttribute("class","card-title text-warning");
-
-    d3text.setAttribute("class","display-3 text-warning");
-    jumbtn1.setAttribute("class","btn btn-warning btn-lg");
-
-    acordeonHeader1.setAttribute("class","card-header bg-warning");
-    acordeonBtn1.setAttribute("class","btn btn-warning collapsed");
-    acordeonHeader2.setAttribute("class","card-header bg-warning");
-    acordeonBtn2.setAttribute("class","btn btn-warning collapsed");
-    acordeonHeader3.setAttribute("class","card-header bg-warning");
-    acordeonBtn3.setAttribute("class","btn btn-warning collapsed");
-
-    elementohidden.setAttribute("class","bg-warning");
-    bt4h.setAttribute("class","hbuttonWarning list-group-item list-group-item-action ");
-    bt5h.setAttribute("class","hbuttonWarning list-group-item list-group-item-action ");
-    bt3h.setAttribute("class","hbuttonWarning list-group-item list-group-item-action ");
-    bt2h.setAttribute("class","hbuttonWarning list-group-item list-group-item-action ");
-    bt1h.setAttribute("class","hbuttonWarning list-group-item list-group-item-action ");
-
-    footer.setAttribute("class","py-1 bg-warning text-white rounded-top");
-    btnfooter.setAttribute("class","btn btn-outline-dark btn-lg ");
-
-}
-
-function temarojo(){
-
-    navth.setAttribute("class","navbar navbar-expand-sm navbar-dark bg-danger fixed-top ");
+    navth.setAttribute("class","navbar navbar-expand-sm navbar-dark bg-"+color+" fixed-top ");
     btnf1.setAttribute("class","btn btn-outline-light my-2 my-sm-0");
 
-    card1h.setAttribute("onmouseover","maszoomDanger(card1h)");
-    card1h.setAttribute("onmouseout","menoszoomDanger(card1h)");
-    card1h.setAttribute("class","card  border border-danger");
-    cardTitle1.setAttribute("class","card-title text-danger");
-    card2h.setAttribute("onmouseover","maszoomDanger(card2h)");
-    card2h.setAttribute("onmouseout","menoszoomDanger(card2h)");
-    card2h.setAttribute("class","card  border border-danger");
-    cardTitle2.setAttribute("class","card-title text-danger");
-    card3h.setAttribute("onmouseover","maszoomDanger(card3h)");
-    card3h.setAttribute("onmouseout","menoszoomDanger(card3h)");
-    card3h.setAttribute("class","card  border border-danger");
-    cardTitle3.setAttribute("class","card-title text-danger");
+    card1h.setAttribute("onmouseover","maszoom(card1h)");
+    card1h.setAttribute("onmouseout","menoszoom(card1h)");
+    card1h.setAttribute("class","card  border border-"+color+"");
+    cardTitle1.setAttribute("class","card-title text-"+color+"");
+    card2h.setAttribute("onmouseover","maszoom(card2h)");
+    card2h.setAttribute("onmouseout","menoszoom(card2h)");
+    card2h.setAttribute("class","card  border border-"+color+"");
+    cardTitle2.setAttribute("class","card-title text-"+color+"");
+    card3h.setAttribute("onmouseover","maszoom(card3h)");
+    card3h.setAttribute("onmouseout","menoszoom(card3h)");
+    card3h.setAttribute("class","card  border border-"+color+"");
+    cardTitle3.setAttribute("class","card-title text-"+color+"");
 
-    d3text.setAttribute("class","display-3 text-danger");
-    jumbtn1.setAttribute("class","btn btn-danger btn-lg");
+    d3text.setAttribute("class","display-3 text-"+color+"");
+    jumbtn1.setAttribute("class","btn btn-"+color+" btn-lg");
 
-    acordeonHeader1.setAttribute("class","card-header bg-danger");
-    acordeonBtn1.setAttribute("class","btn btn-danger collapsed");
-    acordeonHeader2.setAttribute("class","card-header bg-danger");
-    acordeonBtn2.setAttribute("class","btn btn-danger collapsed");
-    acordeonHeader3.setAttribute("class","card-header bg-danger");
-    acordeonBtn3.setAttribute("class","btn btn-danger collapsed");
+    acordeonHeader1.setAttribute("class","card-header bg-"+color+"");
+    acordeonBtn1.setAttribute("class","btn btn-"+color+" collapsed");
+    acordeonHeader2.setAttribute("class","card-header bg-"+color+"");
+    acordeonBtn2.setAttribute("class","btn btn-"+color+" collapsed");
+    acordeonHeader3.setAttribute("class","card-header bg-"+color+"");
+    acordeonBtn3.setAttribute("class","btn btn-"+color+" collapsed");
 
-    elementohidden.setAttribute("class","bg-danger");
-    bt4h.setAttribute("class","hbuttonDanger list-group-item list-group-item-action ");
-    bt5h.setAttribute("class","hbuttonDanger list-group-item list-group-item-action ");
-    bt3h.setAttribute("class","hbuttonDanger list-group-item list-group-item-action ");
-    bt2h.setAttribute("class","hbuttonDanger list-group-item list-group-item-action ");
-    bt1h.setAttribute("class","hbuttonDanger list-group-item list-group-item-action ");
+    elementohidden2.setAttribute("class",color);
+    elementohidden.setAttribute("class","bg-"+color+"");
+    bt4h.setAttribute("class","hbutton"+colorC+" list-group-item list-group-item-action ");
+    bt5h.setAttribute("class","hbutton"+colorC+" list-group-item list-group-item-action ");
+    bt3h.setAttribute("class","hbutton"+colorC+" list-group-item list-group-item-action ");
+    bt2h.setAttribute("class","hbutton"+colorC+" list-group-item list-group-item-action ");
+    bt1h.setAttribute("class","hbutton"+colorC+" list-group-item list-group-item-action ");
 
-    footer.setAttribute("class","py-1 bg-danger text-white rounded-top");
+    footer.setAttribute("class","py-1 bg-"+color+" text-light rounded-top");
     btnfooter.setAttribute("class","btn btn-outline-light btn-lg ");
 
 }
 
-function temanegro(){
 
-    navth.setAttribute("class","navbar navbar-expand-sm navbar-dark bg-dark fixed-top ");
-    btnf1.setAttribute("class","btn btn-outline-light my-2 my-sm-0");
-
-    card1h.setAttribute("onmouseover","maszoomDark(card1h)");
-    card1h.setAttribute("onmouseout","menoszoomDark(card1h)");
-    card1h.setAttribute("class","card  border border-dark");
-    cardTitle1.setAttribute("class","card-title text-dark");
-    card2h.setAttribute("onmouseover","maszoomDark(card2h)");
-    card2h.setAttribute("onmouseout","menoszoomDark(card2h)");
-    card2h.setAttribute("class","card  border border-dark");
-    cardTitle2.setAttribute("class","card-title text-dark");
-    card3h.setAttribute("onmouseover","maszoomDark(card3h)");
-    card3h.setAttribute("onmouseout","menoszoomDark(card3h)");
-    card3h.setAttribute("class","card  border border-dark");
-    cardTitle3.setAttribute("class","card-title text-dark");
-
-    d3text.setAttribute("class","display-3 text-dark");
-    jumbtn1.setAttribute("class","btn btn-dark btn-lg");
-
-    acordeonHeader1.setAttribute("class","card-header bg-dark");
-    acordeonBtn1.setAttribute("class","btn btn-dark collapsed");
-    acordeonHeader2.setAttribute("class","card-header bg-dark");
-    acordeonBtn2.setAttribute("class","btn btn-dark collapsed");
-    acordeonHeader3.setAttribute("class","card-header bg-dark");
-    acordeonBtn3.setAttribute("class","btn btn-dark collapsed");
-
-    elementohidden.setAttribute("class","bg-dark");
-    bt4h.setAttribute("class","hbuttonDark list-group-item list-group-item-action ");
-    bt5h.setAttribute("class","hbuttonDark list-group-item list-group-item-action ");
-    bt3h.setAttribute("class","hbuttonDark list-group-item list-group-item-action ");
-    bt2h.setAttribute("class","hbuttonDark list-group-item list-group-item-action ");
-    bt1h.setAttribute("class","hbuttonDark list-group-item list-group-item-action ");
-
-    footer.setAttribute("class","py-1 bg-dark text-white rounded-top");
-    btnfooter.setAttribute("class","btn btn-outline-light btn-lg ");
-
-}
-
-function temaazul(){
-
-    navth.setAttribute("class","navbar navbar-expand-sm navbar-dark bg-primary fixed-top ");
-    btnf1.setAttribute("class","btn btn-outline-light my-2 my-sm-0");
-
-    card1h.setAttribute("onmouseover","maszoomPrimary(card1h)");
-    card1h.setAttribute("onmouseout","menoszoomPrimary(card1h)");
-    card1h.setAttribute("class","card  border border-primary");
-    cardTitle1.setAttribute("class","card-title text-primary");
-    card2h.setAttribute("onmouseover","maszoomPrimary(card2h)");
-    card2h.setAttribute("onmouseout","menoszoomPrimary(card2h)");
-    card2h.setAttribute("class","card  border border-primary");
-    cardTitle2.setAttribute("class","card-title text-primary");
-    card3h.setAttribute("onmouseover","maszoomPrimary(card3h)");
-    card3h.setAttribute("onmouseout","menoszoomPrimary(card3h)");
-    card3h.setAttribute("class","card  border border-primary");
-    cardTitle3.setAttribute("class","card-title text-primary");
-
-    d3text.setAttribute("class","display-3 text-primary");
-    jumbtn1.setAttribute("class","btn btn-primary btn-lg");
-
-    acordeonHeader1.setAttribute("class","card-header bg-primary");
-    acordeonBtn1.setAttribute("class","btn btn-primary collapsed");
-    acordeonHeader2.setAttribute("class","card-header bg-primary");
-    acordeonBtn2.setAttribute("class","btn btn-primary collapsed");
-    acordeonHeader3.setAttribute("class","card-header bg-primary");
-    acordeonBtn3.setAttribute("class","btn btn-primary collapsed");
-
-    elementohidden.setAttribute("class","bg-primary");
-    bt4h.setAttribute("class","hbuttonPrimary list-group-item list-group-item-action ");
-    bt5h.setAttribute("class","hbuttonPrimary list-group-item list-group-item-action ");
-    bt3h.setAttribute("class","hbuttonPrimary list-group-item list-group-item-action ");
-    bt2h.setAttribute("class","hbuttonPrimary list-group-item list-group-item-action ");
-    bt1h.setAttribute("class","hbuttonPrimary list-group-item list-group-item-action ");
-
-    footer.setAttribute("class","py-1 bg-primary text-white rounded-top");
-    btnfooter.setAttribute("class","btn btn-outline-light btn-lg ");
-
-}
 
 
 
