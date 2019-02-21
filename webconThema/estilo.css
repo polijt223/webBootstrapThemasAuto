@@ -35,3 +35,33 @@
   transition: all 0.5s ease;
 }
 
+#bloque121 {
+  background-image: url("../imagenes/tw2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.swiper-container1 {
+width: 100%;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.swiper-modpablo {
+background-position: center;
+background-size: cover;
+width: 300px;
+height: 400px;
+}

@@ -2,56 +2,20 @@
 <html lang="en">
   <head>
     
-    
-    <title>Title</title>
+    <title>The witcher Blood and wine</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="icon" type="image/x-icon" href="imagenes/ico.png">
-
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="webconThema/estilo.css">
-   
+    <link rel="icon" type="image/x-icon" href="imagenes/ico.png">   
     <link rel="stylesheet" href="webconThema/animate.css">
     <link rel="stylesheet" href="webconThema/swiper.min.css">
     
-    <style type="text/css">
-        #bloque121 {
-            background-image: url("imagenes/tw2.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            height: 500px;
-            margin: 0 auto;
-            padding: 0;
-            position: relative;
-            width: 100%;
-        }
-        .swiper-container {
-            width: 600px;
-            height: 300px;
-        }
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        .swiper-container1 {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        }
-        .swiper-modpablo {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 400px;
-        }
-    </style>
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="webconThema/estilo.css">
+    
   </head>
   <body>
 
@@ -232,7 +196,7 @@
     </nav>
     </nav>
     
-
+    <!--Carrusel para Escritorio-->
     <div class=" d-none d-md-block">
     <div id="carouselId" class="carousel slide " data-ride="carousel">
           <ol class="carousel-indicators">
@@ -291,7 +255,7 @@
           </a>
     </div>
     </div>
-
+    <!--Carrusel para Table y Celular-->
     <div class=" d-md-none">
         <div id="carouselIdCel" class="carousel slide  mt-1" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -429,7 +393,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
 
     <!--
     <div class="parallax-window jumbotron jumbotron-fluid pt-5 wow flipInY" data-parallax="scroll" data-image-src="imagenes/tw2.jpg" >
@@ -745,58 +709,8 @@
     <script src="webconThema/wow.min.js"></script>
     <script src="bootstrap4/js/bootstrap.min.js"></script> 
     <script src="webconThema/js.js"></script>
+    <script src="webconThema/scriptswiper.js"></script>
 
-    <script>
-        var mySwiper = new Swiper ('.swiper-container', {
-          // Optional parameters
-          direction: 'vertical',
-          loop: true,
-      
-          // If we need pagination
-          pagination: {
-            el: '.swiper-pagination',
-          },
-      
-          // Navigation arrows
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-      
-          // And if we need scrollbar
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },
-        });
-
-        $(document).ready(function () {
-        //initialize swiper when document ready
-        var mySwiper = new Swiper ('.swiper-container', {
-            // Optional parameters
-            direction: 'vertical',
-            loop: true
-            })
-        });
-
-
-        var swiper = new Swiper('.swiper-container1', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-
-    </script>
 
   </body>
 </html>
